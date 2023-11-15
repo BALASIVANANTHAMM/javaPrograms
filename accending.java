@@ -4,8 +4,14 @@ import java.util.Scanner;
 public class accending {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the Count Of Array : ");
+        int count= sc.nextInt();
         int temp;
-        int[] a ={8,2,4,9,1,23,3};
+        int[] a =new int[count];
+//        System.out.println("Before Change : "+ Arrays.toString(a));
+        for (int i=0;i<a.length;i++){
+            a[i]=sc.nextInt();
+        }
         System.out.println("Before Change : "+ Arrays.toString(a));
         for (int i=0;i<a.length;i++){
             for (int j=i;j<a.length;j++){

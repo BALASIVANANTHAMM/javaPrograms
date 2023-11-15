@@ -8,8 +8,10 @@ public class factor {
         num= sc.nextInt();
         for (i=1;i<=num;i++){
             if (num%i==0){
+                fact++;
                 System.out.println(i);
             }
         }
+        System.out.println("Number of Factor is : "+fact);
     }
 }
